@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { SortList } from './sort-list';
+import { SortList } from '../sort-list/sort-list';
 import { PlacesSorting } from '../../consts/consts';
 
 type SortProps = {

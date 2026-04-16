@@ -2,12 +2,12 @@ import { FormEvent, useRef, useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-import { Header } from '../components/header';
-import { useAppDispatch, useAppSelector } from '../hooks/hooks';
-import { setError, setCity } from '../store/offers-slice/offers-slice';
-import { loginAction } from '../store/api-action/api-action';
-import { AuthorizationStatus, AppRoute, cities } from '../consts/consts';
-import { getRandomInteger } from '../utils/utils';
+import { Header } from '../../components/header/header';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
+import { setError, setCity } from '../../store/offers-slice/offers-slice';
+import { loginAction } from '../../store/api-action/api-action';
+import { AuthorizationStatus, AppRoute, cities } from '../../consts/consts';
+import { getRandomInteger } from '../../utils/utils';
 
 
 function LoginPage(): JSX.Element {

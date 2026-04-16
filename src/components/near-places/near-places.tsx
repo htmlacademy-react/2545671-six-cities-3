@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Offer } from '../../types/offer';
-import { PlaceCard } from '../place-card';
+import { PlaceCard } from '../place-card/place-card';
 
 type NearPlacesProps = {
   offers: Offer[];

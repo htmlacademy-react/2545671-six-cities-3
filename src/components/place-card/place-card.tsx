@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Offer } from '../types/offer';
-import { getRating } from '../utils/utils';
-import { BookmarksButton } from './bookmarks-button';
+import { Offer } from '../../types/offer';
+import { getRating } from '../../utils/utils';
+import { BookmarksButton } from '../bookmarks-button/bookmarks-button';
 
 const configCard = {
   cities: {

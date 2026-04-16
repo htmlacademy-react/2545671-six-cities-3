@@ -1,18 +1,18 @@
-import { Header } from '../components/header';
-import NavTabs from '../components/main-components/nav-tabs/nav-tabs';
-import Sort from '../components/main-components/sort';
-import OfferList from '../components/main-components/offer-list';
-import Map from '../components/map/map';
-import Spinner from '../components/spinner/spinner';
-import MainEmpty from '../components/main-components/main-empty/main-empty';
+import { Header } from '../../components/header/header';
+import NavTabs from '../../components/nav-tabs/nav-tabs';
+import Sort from '../../components/sort/sort';
+import OfferList from '../../components/offer-list/offer-list';
+import Map from '../../components/map/map';
+import Spinner from '../../components/spinner/spinner';
+import MainEmpty from '../../components/main-empty/main-empty';
 
 import { Helmet } from 'react-helmet-async';
 import { useState, useEffect, useMemo } from 'react';
-import { useAppDispatch, useAppSelector } from '../hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 
-import { PlacesSorting, AuthorizationStatus } from '../consts/consts';
-import { createFilteredAndSortedSelector } from '../selectors/offers-selectors';
-import { fetchAllOffers } from '../store/api-action/api-action';
+import { PlacesSorting, AuthorizationStatus } from '../../consts/consts';
+import { createFilteredAndSortedSelector } from '../../selectors/offers-selectors';
+import { fetchAllOffers } from '../../store/api-action/api-action';
 
 function MainPage(): JSX.Element {
   const [activeOfferId, setActiveOfferId] = useState<string | null>(null);

@@ -1,10 +1,10 @@
 import { memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { useAppDispatch, useAppSelector } from '../hooks/hooks';
-import { Offer } from '../types/offer';
-import { AuthorizationStatus, AppRoute } from '../consts/consts';
-import { postFavoriteAction } from '../store/api-action/api-action';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
+import { Offer } from '../../types/offer';
+import { AuthorizationStatus, AppRoute } from '../../consts/consts';
+import { postFavoriteAction } from '../../store/api-action/api-action';
 
 const configButton = {
   small: {

@@ -1,4 +1,4 @@
-import { LocationsList } from '../locations-list';
+import { LocationsList } from '../locations-list/locations-list';
 
 function NavTabs() {
 

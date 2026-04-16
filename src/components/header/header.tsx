@@ -1,10 +1,10 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from './logo/logo';
-import { AuthorizationStatus, AppRoute } from '../consts/consts';
-import { logoutAction } from '../store/api-action/api-action';
-import { useAppSelector, useAppDispatch } from '../hooks/hooks';
+import Logo from '../logo/logo';
+import { AuthorizationStatus, AppRoute } from '../../consts/consts';
+import { logoutAction } from '../../store/api-action/api-action';
+import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
 
 type HeaderProps = {
   showNav?: boolean;

@@ -10,11 +10,11 @@ import { makeFakeState } from '../../utils/mocks';
 import mockOffers from '../../mock/mock-offers';
 import type { State, AppDispatch } from '../../types/state';
 
-vi.mock('../../pages/main-page', () => ({ __esModule: true, default: () => <div data-testid="page-main">Main</div> }));
-vi.mock('../../pages/offer-page', () => ({ __esModule: true, default: () => <div data-testid="page-offer">Offer</div> }));
-vi.mock('../../pages/favorites-page', () => ({ __esModule: true, default: () => <div data-testid="page-favorites">Favorites</div> }));
-vi.mock('../../pages/login-page', () => ({ __esModule: true, default: () => <div data-testid="page-login">Login</div> }));
-vi.mock('../../pages/error/error-404', () => ({ __esModule: true, default: () => <div data-testid="page-notfound">404</div> }));
+vi.mock('../../pages/main-page/main-page', () => ({ __esModule: true, default: () => <div data-testid="page-main">Main</div> }));
+vi.mock('../../pages/offer-page/offer-page', () => ({ __esModule: true, default: () => <div data-testid="page-offer">Offer</div> }));
+vi.mock('../../pages/favorites-page/favorites-page', () => ({ __esModule: true, default: () => <div data-testid="page-favorites">Favorites</div> }));
+vi.mock('../../pages/login-page/login-page', () => ({ __esModule: true, default: () => <div data-testid="page-login">Login</div> }));
+vi.mock('../../pages/error-404/error-404', () => ({ __esModule: true, default: () => <div data-testid="page-notfound">404</div> }));
 
 vi.mock('../../hooks/hooks', async () => {
   const actual = await vi.importActual<typeof import('../../hooks/hooks')>('../../hooks/hooks');

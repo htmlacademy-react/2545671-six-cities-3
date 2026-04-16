@@ -1,14 +1,14 @@
-import { Header } from '../components/header';
-import Footer from '../components/footer/footer';
-import { PlaceCard } from '../components/place-card';
+import { Header } from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import { PlaceCard } from '../../components/place-card/place-card';
 
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import { selectFavoritesByCity, selectFavoriteCities } from '../selectors/favorites-selector';
-import { useAppSelector, useAppDispatch } from '../hooks/hooks';
-import { fetchFavoriteAction } from '../store/api-action/api-action';
+import { selectFavoritesByCity, selectFavoriteCities } from '../../selectors/favorites-selector';
+import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
+import { fetchFavoriteAction } from '../../store/api-action/api-action';
 
 
 function FavoritesPage(): JSX.Element {

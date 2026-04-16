@@ -1,5 +1,5 @@
-import { ReviewItem } from './review-item';
-import { ReviewsForm } from './reviews-form';
+import { ReviewItem } from '../review-item/review-item';
+import { ReviewsForm } from '../reviews-form/reviews-form';
 import { memo } from 'react';
 
 import { Review } from '../../types/review';

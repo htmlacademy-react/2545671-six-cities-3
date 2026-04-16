@@ -1,23 +1,23 @@
-import { Header } from '../components/header';
-import { OfferGallery } from '../components/offers-components/offer-gallery/offer-gallery';
-import { OfferDetails } from '../components/offers-components/offer-details';
-import { OfferHost } from '../components/offers-components/offer-host';
-import { OfferReviews } from '../components/offers-components/offer-reviews';
-import { NearPlaces } from '../components/offers-components/near-places';
-import InsideAmenitiesItem from '../components/offers-components/inside-amenities-item/inside-amenities-item';
-import Error404 from './error/error-404';
-import Map from '../components/map/map';
-import Spinner from '../components/spinner/spinner';
+import { Header } from '../../components/header/header';
+import { OfferGallery } from '../../components/offer-gallery/offer-gallery';
+import { OfferDetails } from '../../components/offer-details/offer-details';
+import { OfferHost } from '../../components/offer-host/offer-host';
+import { OfferReviews } from '../../components/offer-reviews/offer-reviews';
+import { NearPlaces } from '../../components/near-places/near-places';
+import InsideAmenitiesItem from '../../components/inside-amenities-item/inside-amenities-item';
+import Error404 from '../error-404/error-404';
+import Map from '../../components/map/map';
+import Spinner from '../../components/spinner/spinner';
 
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 
-import { fetchNearbyOffersById, fetchOfferById, fetchReviewsByOfferId } from '../store/api-action/api-action';
-import { clearOffer } from '../store/current-offer-slice/current-offer-slice';
-import { clearReviews } from '../store/reviews-slice/reviews-slice';
-import { useAppDispatch, useAppSelector } from '../hooks/hooks';
-import { COUNT_NEARBY_OFFERS, MAX_IMAGES_COUNT, AuthorizationStatus } from '../consts/consts';
+import { fetchNearbyOffersById, fetchOfferById, fetchReviewsByOfferId } from '../../store/api-action/api-action';
+import { clearOffer } from '../../store/current-offer-slice/current-offer-slice';
+import { clearReviews } from '../../store/reviews-slice/reviews-slice';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
+import { COUNT_NEARBY_OFFERS, MAX_IMAGES_COUNT, AuthorizationStatus } from '../../consts/consts';
 
 function OfferPage() {
   const { id } = useParams<{ id: string }>();

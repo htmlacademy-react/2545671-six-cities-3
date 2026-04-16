@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
-import FavoritesPage from '../../pages/favorites-page';
-import MainPage from '../../pages/main-page';
-import OfferPage from '../../pages/offer-page';
-import Error404 from '../../pages/error/error-404';
-import LoginPage from '../../pages/login-page';
+import FavoritesPage from '../../pages/favorites-page/favorites-page';
+import MainPage from '../../pages/main-page/main-page';
+import OfferPage from '../../pages/offer-page/offer-page';
+import Error404 from '../../pages/error-404/error-404';
+import LoginPage from '../../pages/login-page/login-page';
 import PrivateRoute from '../private-route/private-route';
 
 import { AppRoute } from '../../consts/consts';

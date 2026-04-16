@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Offer } from '../../types/offer';
 import { getRating, capitalizeFirst } from '../../utils/utils';
 import { MIN_COUNT } from '../../consts/consts';
-import { BookmarksButton } from '../bookmarks-button';
+import { BookmarksButton } from '../bookmarks-button/bookmarks-button';
 
 
 type OfferDetails = {

@@ -1,4 +1,4 @@
-vi.mock('../locations-list', () => ({
+vi.mock('../locations-list/locations-list', () => ({
   LocationsList: () =>
     <div data-testid="mock-locations-list" />,
 }));
